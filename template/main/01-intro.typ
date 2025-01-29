@@ -1,19 +1,19 @@
-#import "@local/hei-synd-report:0.1.0": *
+#import "@preview/hei-synd-report:0.1.0": *
 #import "/metadata.typ": *
 #pagebreak()
 
 = Introduction
 
 #option_style(type:option.type)[
-Your introduction serves to introduce the topic and to arouse the reader’s curiosity with an overview. Why it is important and how it is structured, we explain here.
-You can consider an introduction as a teaser for your work. You arouse interest and give a foretaste by presenting your motivation, your method and the state of research in your introduction.
-Convince your examiners already in the introduction that your work will be exciting. If your professor starts reading your work with anticipation and interest, the chances of getting good grades are higher.
-Pay particular attention to the following in your introduction:
+  This chapter provides an overview of the project, including its background, motivation, and objectives. It should clearly state the problem being addressed and why it is relevant.
 
-- *Introduce the topic* - What characterizes the topic?
-- *Introduce the goal* - What do you want to achieve with your thesis?
-- *Make the reader curious* - What motivates the reader to read on?
-- *Describe the relevance* - Why is this bachelor thesis scientifically relevant?
+  Key elements:
+  - *Introduce the goal* – What do you want to achieve with the project?
+  - *Provide context* – Why is this project relevant? What problem does it solve?
+  - *Define the scope* – What are the boundaries and limitations of your project?
+  - *Outline the structure* – How is this report organized?
+
+  Always place yourself in the point of view of the reader. For who is the report intended? What do they need to know to understand the project? Create and follow a red thread that guides the reader through the report.
 ]
 
 #infobox()[Welcome to the template’s introductory chapter! Instead of boring you with lorem ipsum, here’s a quick guide to what you can do in Typst and, more specifically, in this template.
@@ -100,12 +100,13 @@ Highlight key points with these fun boxes (and more):
   [ #todobox()[Todobox: Just do it!] ],
   )
 
-== Citations, Glossary and Acronyms
+== Citations, Acronyms and Glossary
 
 Add citations with `@` like @zahnoDynamicProjectPlanning2023 (stored in `/tail/bibliography.bib`).
 
-Glossary terms like #gls("rust") expand on first use and abbreviate after #gls("rust"). Use #gls-description("rust") to show a description. Acronyms and glossary entries auto-generate at the document’s end (defined in `/tail/glossary.typ`).
-\ \ \
+Acronym terms like #gls("it") expand on first use and abbreviate after #gls("it"). Glossary items such as #gls("rust") can also be used to show their description as such: #gls-description("rust"). Acronyms and glossary entries auto-generate at the document’s end (defined in `/tail/glossary.typ`).
+
+#pagebreak()
 
 == Code
 

@@ -1,17 +1,17 @@
-#import "@local/hei-synd-report:0.1.0": *
+#import "@preview/hei-synd-report:0.1.0": *
 #import "/metadata.typ": *
 #pagebreak()
 
 = Validation
 
 #option_style(type:option.type)[
-In addition to presenting the results of your research in relation to your research question, it is imperative that the validation section of your bachelor’s thesis adheres to certain principles to ensure clarity, coherence, and rigor. Here are some additional considerations to enhance the validation process:
+  This chapter assesses the correctness and performance of the implementation. It includes testing methods, simulations, and any validation techniques used to ensure the system meets its requirements.
 
-- *Objective Description of Data*: Provide an objective and detailed description of the data used in your analysis.
-- *Utilize Graphs and Tables*: Visual aids such as graphs, charts, and tables can greatly enhance the clarity and impact of your results presentation.
-- *Link Results to Research Questions*: For each result presented, explicitly link it back to the corresponding research question or hypothesis.
-- *Ranking Results by Importance*: Prioritize your results by ranking them in order of importance or relevance to your research objectives.
-- *Confirmation or Rejection of Hypotheses*: Evaluate each result in light of the hypotheses formulated in your thesis.
+  Key elements:
+  - *Explain verification methods* – How do you ensure the system functions correctly?
+  - *Describe validation techniques* – How do you prove that the solution meets its objectives?
+  - *Present test results* – What experiments, simulations, or benchmarks were conducted?
+  - *Discuss findings* – What do the results show? Were there unexpected outcomes?
 ]
 
 #lorem(200)

@@ -1,5 +1,4 @@
-//#import "@preview/hei-synd-report:0.1.0": *
-#import "@local/hei-synd-report:0.1.0": *
+#import "@preview/hei-synd-report:0.1.0": *
 #import "/metadata.typ": *
 #import "/tail/bibliography.typ": *
 #import "/tail/glossary.typ": *
@@ -20,7 +19,7 @@
 // Content
 //
 #include "/main/01-intro.typ"
-#include "/main/02-analysis.typ"
+#include "/main/02-specification.typ"
 #include "/main/03-design.typ"
 #include "/main/04-implementation.typ"
 #include "/main/05-validation.typ"

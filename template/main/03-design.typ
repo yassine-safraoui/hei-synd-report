@@ -1,19 +1,19 @@
-#import "@local/hei-synd-report:0.1.0": *
+#import "@preview/hei-synd-report:0.1.0": *
 #import "/metadata.typ": *
 #pagebreak()
 
 = Design
 
 #option_style(type:option.type)[
-In the design section of your work, you have the opportunity to provide a detailed blueprint of the system you intend to develop or analyze. This section serves as the foundation upon which your implementation will be built. Here’s how you can enrich and expand upon this section:
+  This chapter defines the overall system architecture, core components, and interactions between different parts. The goal is to translate the specifications into a concrete, actionable blueprint for development.
 
-- *System Overview*: Begin by providing a comprehensive overview of the system under consideration.
-- *Requirements Specification*: Outline the specific requirements that your system must fulfill.
-- *Architecture and Design Principles*: Delve into the architectural design of your system, elucidating the underlying principles and design decisions that govern its structure.
-- *Technology Stack*: Detail the technologies and tools that will be employed in the development of your system.
-- *Data Management and Storage*: If your system involves the management or manipulation of data, provide insights into how data will be structured, stored, and accessed.
-- *User Interface (UI) Design*: If applicable, describe the user interface of your system, focusing on usability, accessibility, and user experience (UX) design principles.
-- *Integration and Interoperability*: Address how your system will integrate with existing systems or external services, if relevant.
+  Key elements:
+  - *Define the architecture* – What are the main components of the system, and how do they interact?
+  - *Select technologies* – What programming languages, tools, or frameworks will be used? Why?
+  - *Design data structures* – How will data be organized and processed?
+  - *Create process flow* – What are the key steps or workflows in the system?
+  - *Plan modularity & scalability* – How can the design adapt to future needs or extensions?
+  - *Address constraints* – What design choices were made due to performance, security, or usability considerations?
 ]
 
 #lorem(200)

@@ -22,6 +22,9 @@ doc_name      := "report"
 type          := "draft"
 lang          := "en"
 
+local_dir      := "~/Library/Application\\ Support/typst/packages/local"
+preview_dir    := "~/work/repo/edu/template/packages/packages/preview"
+
 ##################################################
 # COMMANDS
 #
@@ -51,18 +54,25 @@ lang          := "en"
   echo "Install typst"
   brew install typst
 
-# install the template locally
+# install the template locally as local package
 [macos]
-@local:
-  echo "Install template locally"
-  mkdir -p ~/Library/Application\ Support/typst/packages/local/{{project_name}}/{{project_tag}}
-  cp -r ./* ~/Library/Application\ Support/typst/packages/local/{{project_name}}/{{project_tag}}
+@copy-local:
+  echo "Install template locally as local"
+  mkdir -p {{local_dir}}/{{project_name}}/{{project_tag}}
+  cp -r ./* {{local_dir}}/{{project_name}}/{{project_tag}}
+
+# install the template locally as preview package
+[macos]
+@copy-preview:
+  echo "Install template locally as preview"
+  mkdir -p {{preview_dir}}/{{project_name}}/{{project_tag}}
+  cp -r ./* {{preview_dir}}/{{project_name}}/{{project_tag}}
 
 # generate changelog
 @changelog:
   git-cliff --unreleased --tag {{project_tag}}
 
-#
+# generate changelog for the release
 @changelog-released:
   git-cliff
 

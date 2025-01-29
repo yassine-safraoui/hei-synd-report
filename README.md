@@ -21,7 +21,7 @@ This is the official template for a students report or project or lab report for
 
 ## Using the template
 
-1. In the `Typst` Univers select the `hei-synd-report` template. Locally you can use the Typst CLI  to initialise the project:
+1. In the `Typst` Univers select the `hei-synd-report` template. Locally you can use the Typst CLI to initialise the project:
 
    ```bash
    # from the typst universe
@@ -110,7 +110,7 @@ typst watch report.typ
 - [x] Draft and Final Typesetting
 - [x] Content help
    - [x] Introduction
-   - [x] Analysis
+   - [x] Specification
    - [x] Design
    - [x] Implementation
    - [x] Validation
