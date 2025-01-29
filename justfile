@@ -68,13 +68,18 @@ preview_dir    := "~/work/repo/edu/template/packages/packages/preview"
   mkdir -p {{preview_dir}}/{{project_name}}/{{project_tag}}
   cp -r ./* {{preview_dir}}/{{project_name}}/{{project_tag}}
 
+
 # generate changelog
 @changelog:
-  git-cliff --unreleased --tag {{project_tag}}
-
-# generate changelog for the release
-@changelog-released:
   git-cliff
+
+# generate changelog for the unreleased specified tag
+@changelog-unreleased:
+  git-cliff -unreleased --tag {{project_tag}}
+
+# generate changelog and tag for the current release
+@changelog-release:
+  git-cliff --tag {{project_tag}}
 
 # watch a typ file for continuous incremental build
 watch file_name=doc_name:
