@@ -1,13 +1,13 @@
 <h1 align="center">
   <br>
-  <img src="./img/hei-en.png" alt="HEI-Vs Logo" width="350">
+  <img src="https://github.com/hei-templates/hei-synd-report/blob/51e8aea5b38bb51cba041bfc0ab769cc12f1a865/img/hei-en.svg" alt="HEI-Vs Logo" width="350">
   <br>
   HEI-Vs Engineering School - Systems Engineering
   <br>
 </h1>
 <div align="center">
   <br>
-  <img src="./img/synd-light.png" alt="Industrial Systems Logo" width="350">
+  <img src="https://github.com/hei-templates/hei-synd-report/blob/51e8aea5b38bb51cba041bfc0ab769cc12f1a865/img/synd-light.svg" alt="Industrial Systems Logo" width="350">
   <br>
 </div>
 
@@ -16,16 +16,16 @@
 
 This is the official template for a students report or project or lab report for the [HEI-Vs Engineering School](https://synd.hevs.io) in Sion, Switzerland. More templates can the found in our [GitHub organization](https://github.com/hei-templates)
 
-![](img/sample.png)
+![](img/https://github.com/hei-templates/hei-synd-report/blob/51e8aea5b38bb51cba041bfc0ab769cc12f1a865/img/sample.png)
 
 ## Using the template
 
 1. In the `Typst` Univers select the `hei-synd-report` template. Locally you can use the Typst CLI  to initialise the project:
-   
+
    ```bash
    # from the typst universe
    typst init @preview/hei-synd-report:0.1.0
-   
+
    # only if installed locally
    typst init @local/hei-synd-report:0.1.0
    ```
@@ -72,7 +72,7 @@ typst watch report.typ
 
 ## Help
 
-If you need help writting your document look at the [Typst documentation](https://typst.app/docs/) or if ou need more help with the template specifics look at the document [Guide-to-Typst](./guide-to-typst.pdf).
+If you need help writting your document look at the [Typst documentation](https://typst.app/docs/) or if ou need more help with the template specifics look at the document [Guide-to-Typst](https://github.com/hei-templates/hei-synd-report/blob/51e8aea5b38bb51cba041bfc0ab769cc12f1a865/guide-to-typst.pdf).
 
 ## Contributing
 
