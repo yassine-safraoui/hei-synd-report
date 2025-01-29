@@ -32,6 +32,56 @@ This is the official template for a students report or project or lab report for
 
 2. Fill in the metadata in the `metadata.typ` file.
 
+All metadata is optional, but it is recommended to fill in as much as possible. The metadata is divided into three sections: `options`, `doc`, and `settings`.
+
+   | Metadata                 | Type                        | Description                                                                                         |
+   | ------------------------ | --------------------------- | --------------------------------------------------------------------------------------------------- |
+   | `options`                | _dictionary_                | These are fixed values for the document, who doesn't contribute to the content.                     |
+   | `option.type`            | _string_ ("draft","final")  | Type of the document. "final" will omit some text at the beginning of chapters (default: `"final"`) |
+   | `option.lang`            | _string_ ("en", "fr", "de") | Language of the document. Many element will be changed accordingly (default:`"en"`)                 |
+   | `doc`                    | _dictionary_                | Document metadata                                                                                   |
+   | `doc.title`              | _content_                   | Title of the document.                                                                              |
+   | `doc.abbr`               | _content_                   | Abbreviation of the Title.                                                                          |
+   | `doc.subtitle`           | _content_                   | Subtitle of the document.                                                                           |
+   | `doc.url`                | _string_                    | URL for the document or project                                                                     |
+   | `doc.logos`              | _dictionary_                | Dicrionary for the different logos                                                                  |
+   | `doc.logos.tp_topleft`   | _image_                     | Image for the topleft section of the titlepage                                                      |
+   | `doc.logos.tp_topright`  | _image_                     | Image for the topright section of the titlepage                                                     |
+   | `doc.logos.tp_main`      | _image_                     | Image for the main section of the titlepage                                                         |
+   | `doc.logos.header`       | _image_                     | Image for the header of the document                                                                |
+   | `doc.authors`            | _list_ of _dictionary_      | List of authors with their metadata                                                                 |
+   | `doc.authors.name`       | _content_                   | Name of the author                                                                                  |
+   | `doc.authors.abbr`       | _content_                   | Abbreviation of the author                                                                          |
+   | `doc.authors.email`      | _string_                    | Email of the author                                                                                 |
+   | `doc.authors.url`        | _string_                    | URL of the author                                                                                   |
+   | `doc.school`             | _dictionary_                | School metadata                                                                                     |
+   | `doc.school.name`        | _content_                   | Name of the school                                                                                  |
+   | `doc.school.major`       | _content_                   | Major of the school                                                                                 |
+   | `doc.school.orientation` | _content_                   | Orientation of the school                                                                           |
+   | `doc.school.url`         | _string_                    | URL of the school                                                                                   |
+   | `doc.course`             | _dictionary_                | Course metadata                                                                                     |
+   | `doc.course.name`        | _content_                   | Name of the course                                                                                  |
+   | `doc.course.url`         | _string_                    | URL of the course                                                                                   |
+   | `doc.course.prof`        | _content_                   | Name of the professor                                                                               |
+   | `doc.course.class`       | _content_                   | Class of the course                                                                                 |
+   | `doc.course.semester`    | _content_                   | Semester of the course                                                                              |
+   | `doc.keywords`           | _list_ of _string_          | Keywords for the document                                                                           |
+   | `doc.version`            | _content_                   | Version of the document                                                                             |
+   | `date`                   | _datetime_                  | Date of the document (default: `datetime.today()`                                                   |
+   | `tableof`                | _dictionary_                | Table of ... settings for the document                                                              |
+   | `tableof.toc`            | _boolean_                   | Create table of contents (default: `true`)                                                          |
+   | `tableof.tof`            | _boolean_                   | Create table of figures (default: `false`)                                                          |
+   | `tableof.tot`            | _boolean_                   | Create table of tables (default: `false`)                                                           |
+   | `tableof.tol`            | _boolean_                   | Create table of listings (default: `false`)                                                         |
+   | `tableof.toe`            | _boolean_                   | Create table of equations (default: `false`)                                                        |
+   | `tableof.maxdepth`       | _integer_                   | Max depth of the table of contents (default: `3`)                                                   |
+   | `gloss`                  | _boolean_                   | Create glossary and acronyms (default: `true`)                                                      |
+   | `appendix`               | _boolean_                   | Create appendix (default: `false`)                                                                  |
+   | `bib`                    | _dictionary_                | Bibliography settings for the document                                                              |
+   | `bib.display`            | _boolean_                   | Display bibliography (default: `true`)                                                              |
+   | `bib.path`               | _string_                    | Path to the bibliography file (default: `"/tail/bibliography.bib"`)                                 |
+   | `bib.style`              | _string_                    | Style of the bibliography (default: `"ieee"`)                                                       |
+
 3. Write your content in the `report.typ` file as well as the other files in the `main` folder.
 
 ## Usage
@@ -76,15 +126,13 @@ If you need help writting your document look at the [Typst documentation](https:
 
 ## Contributing
 
-We welcome contributions from students and faculty members of HEI-Vs Engineering School. If you would like to contribute to any of the repositories in this organization, please follow these steps:
+If you would like to contribute to any of the repositories in this organization, please follow these steps:
 
 1. Fork the repository you want to contribute to.
 2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them with descriptive messages.
+3. Make your changes and commit them with conventional commit messages.
 4. Push your branch to your forked repository.
 5. Open a pull request in the original repository and describe your changes.
-
-Please ensure that you follow the code of conduct and guidelines for contributing as outlined in each repository.
 
 ## Issues and Support
 

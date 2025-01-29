@@ -1,6 +1,6 @@
-////////////////////////////////
-// DO NOT TOUCH THESE OPTIONS //
-////////////////////////////////
+//-------------------------------------
+// Document options
+//
 #let option = (
   //type        : "final",
   type        : "draft",
@@ -8,7 +8,6 @@
   //lang        : "de",
   //lang        : "fr",
 )
-//////////////////////////////
 //-------------------------------------
 // Optional generate titlepage image
 //
