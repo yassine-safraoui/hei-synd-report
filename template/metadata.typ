@@ -50,6 +50,12 @@
       email       : "axel.amand@hevs.ch",
       url         : "https://synd.hevs.io",
     ),
+    (
+      name        : "Rémi Heredero",
+      abbr        : "HeR",
+      email       : "remi.heredero@hevs.ch",
+      url         : "https://synd.hevs.io",
+    ),
   ),
   school: (
     name        : "HES-SO Valais//Wallis",
