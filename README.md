@@ -1,5 +1,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/hei-templates/hei-synd-report)
-![GitHub Release](https://img.shields.io/github/v/release/hei-templates/hei-synd-report?include_prereleases)
+![GitHub Release](https://img.shields.io/github/v/release/hei-templates/hei-synd-report)
+
 
 <h1 align="center">
   <br>
