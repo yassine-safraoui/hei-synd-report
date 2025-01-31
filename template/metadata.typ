@@ -2,11 +2,11 @@
 // Document options
 //
 #let option = (
-  //type        : "final",
-  type        : "draft",
-  lang        : "en",
-  //lang        : "de",
-  //lang        : "fr",
+  type : "final",
+  //type : "draft",
+  lang : "en",
+  //lang : "de",
+  //lang : "fr",
 )
 //-------------------------------------
 // Optional generate titlepage image

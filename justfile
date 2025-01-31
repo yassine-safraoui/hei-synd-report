@@ -16,8 +16,9 @@ project_tag   := "0.1.0"
 typst_version := "typst -V"
 typst_github  := "https://github.com/typst/typst --tag v0.12.0"
 
-option_script := "scripts/change-options.bash"
+option_script := "change-options.bash"
 template_dir  := join(justfile_directory(), "template")
+scripts_dir   := join(justfile_directory(), "lib/scripts")
 doc_name      := "report"
 type          := "draft"
 lang          := "en"
@@ -87,20 +88,17 @@ watch file_name=doc_name:
 
 # open pdf
 open file_name=doc_name:
-  pushd {{template_dir}}
-  {{open}} {{file_name}}.pdf
-  popd
+  {{open}} {{template_dir}}/{{file_name}}.pdf
 
 # build, rename and copy a typ file to a pdf
 @pdf file_name=doc_name type=type lang=lang:
   echo "--------------------------------------------------"
   echo "-- Generate {{file_name}}.pdf of type {{type}}"
   echo "--"
-  pushd {{template_dir}}
-  bash {{option_script}} -t {{type}} -l {{lang}}
-  typst c {{file_name}}.typ
+  bash {{scripts_dir}}/{{option_script}} -t {{type}} -l {{lang}}
+  typst c {{template_dir}}/{{file_name}}.typ
+  mv {{template_dir}}/{{file_name}}.pdf {{template_dir}}/{{file_name}}-{{lang}}-{{type}}.pdf
   just clean
-  popd
 
 # build, rename and copy a typ file in all variants
 @pdf-all file_name=doc_name:
@@ -118,6 +116,9 @@ open file_name=doc_name:
   echo "-- Clean {{project_name}}"
   echo "--"
   rm lib/*.pdf || true
+  rm template/metadata.pdf || true
+  rm template/main/*.pdf || true
+  rm template/tail/*.pdf || true
 
 # cleanup intermediate files
 [windows]
@@ -126,3 +127,6 @@ open file_name=doc_name:
   echo "-- Clean {{project_name}}"
   echo "--"
   del /q /s lib\*.pdf 2>nul
+  del /q /s template\metadata.pdf 2>nul
+  del /q /s template\main\*.pdf 2>nul
+  del /q /s template\tail\*.pdf 2>nul

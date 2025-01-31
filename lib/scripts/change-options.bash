@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #================================================================================
-# change-options.bash - Changes the orientation and language options in the ../../01-settings/metadata.typ file
+# change-options.bash - Changes the orientation and language options in the ../../metadata.typ file
 # usage:
 #
 
@@ -29,7 +29,7 @@ elif [[ "$OSTYPE" == "linux-gnu"* || "$OSTYPE" == "cygwin" || "$OSTYPE" == "mysy
 else
   base_directory="$(dirname "$(readlink -f "$0")")"
 fi
-base_directory="$base_directory/../../"
+base_directory="$base_directory/../../template/"
 pushd "$base_directory"
 
 SEPARATOR='--------------------------------------------------------------------------------'
@@ -39,7 +39,7 @@ INDENT='  '
 #echo "-- ${0##*/} Started!"
 #echo ""
 
-fname="01-settings/metadata.typ"
+fname="metadata.typ"
 # disable all options
 sed -e "s/^\  lang : \"en\",/  \/\/lang : \"en\",/g" "$fname" > "$fname.tmp" && mv "$fname.tmp" "$fname"
 sed -e "s/^\  lang : \"fr\",/  \/\/lang : \"fr\",/g" "$fname" > "$fname.tmp" && mv "$fname.tmp" "$fname"
