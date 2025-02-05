@@ -1,6 +1,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/hei-templates/hei-synd-report)
 ![GitHub Release](https://img.shields.io/github/v/release/hei-templates/hei-synd-report)
-![Telemetry Vistor Count](https://app-tianji.msgbyte.com/telemetry/cm64lizd7hzwj12yac9ppg3tv/cm6rhenu1u6x712ya395bubag/badge.svg)
+![Telemetry Vistor Count](https://app-tianji.msgbyte.com/telemetry/cm64lizd7hzwj12yac9ppg3tv/cm6rhenu1u6x712ya395bubag/badge.svg?url=https://github.com/hei-templates/hei-synd-report)
 ![](https://app-tianji.msgbyte.com/telemetry/cm64lizd7hzwj12yac9ppg3tv/cm6rhenu1u6x712ya395bubag.gif)
 
 <h1 align="center">
