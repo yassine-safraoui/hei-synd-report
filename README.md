@@ -1,6 +1,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/hei-templates/hei-synd-report)
 ![GitHub Release](https://img.shields.io/github/v/release/hei-templates/hei-synd-report)
-![](http://192.168.1.66:30600/telemetry/clnzoxcy10001vy2ohi4obbi0/cm7hhb3lf0038ru047n9dnhvt.gif)
+![](http://tianji.tschinz.duckdns.org/telemetry/clnzoxcy10001vy2ohi4obbi0/cm7hhb3lf0038ru047n9dnhvt.gif)
 
 <h1 align="center">
   <br>
