@@ -1,4 +1,4 @@
-#import "@preview/hei-synd-report:0.1.0": *
+#import "@preview/hei-synd-report:0.1.1": *
 
 #let entry-list = (
   (

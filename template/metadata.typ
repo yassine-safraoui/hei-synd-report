@@ -11,7 +11,7 @@
 //-------------------------------------
 // Optional generate titlepage image
 //
-#import "@preview/fractusist:0.1.0":*  // only for the generated images
+#import "@preview/fractusist:0.1.1":*  // only for the generated images
 
 #let titlepage_logo= dragon-curve(
   12,
