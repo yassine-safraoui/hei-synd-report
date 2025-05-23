@@ -171,7 +171,7 @@
   set heading(numbering: "1.1")
 
   show heading.where(level: 1): (it) => {
-    set text(size: huge)
+    set text(size: larger-p)
     set block(above: 1.2em, below: 1.2em)
     if it.numbering != none {
       let num = numbering(it.numbering, ..counter(heading).at(it.location()))
